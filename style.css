@@ -1,0 +1,78 @@
+/* Импорт шрифта из Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/*HEADER*/
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.ulheader {
+    /*margin-left: 25px;*/
+}
+
+nav > ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+nav ul li a:active {
+    color: blue;
+}
+
+nav ul li a:visited {
+    color: green;
+}
+
+header, main {
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+/*MAIN*/
+
+article {
+    flex: 1;
+}
+
+aside {
+    flex: 2; /* Занимает доступное пространство слева */
+    background-color: #f0f0f0; /* Цвет фона для примера */
+    padding: 20px; /* Отступы для вашего aside */
+}
+
+main {
+    display: flex;
+    background-color: #e0e0e0; /* Цвет фона для примера */
+    padding: 20px; /* Отступы для вашего main */
+}
+
+/*FOOTER*/
+footer {
+    background-color: #333; /* Цвет фона для футера (замените на свой) */
+    color: #fff; /* Цвет текста внутри футера (замените на свой) */
+    text-align: center; /* Выравнивание текста по центру */
+    padding: 20px; /* Внутренние отступы для футера (замените на свои) */
+}
+
+.footer-content {
+    display: inline-block; /* Чтобы контент внутри футера выравнивался по центру */
+}
