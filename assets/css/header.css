@@ -1,0 +1,34 @@
+header {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+header .logo_div {
+    background-color: inherit;
+    border-radius: 10px;
+}
+
+header .logo_div a {
+    background-color: transparent;
+}
+
+header .logo_div a img.logo {
+    height: 60px;
+    margin: 10px;
+    background-color: inherit;
+}
+
+header .logo_div:hover {
+    background-color: #202020;
+}
+
+header .logo_div:active {
+    background-color: #303030;
+}

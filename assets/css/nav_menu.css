@@ -1,38 +1,21 @@
-
 nav {
     background-color: #151515;
     padding: 0px;
     border-radius: 10px;
-    max-width: 50%;
-    height: fit-content;
-}
-
-nav > * {
-    background-color: inherit;
+    max-width: 60%;
 }
 
 nav .nav_list {
-    /*margin-left: 25px;*/
-    background-color: inherit;
     display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    font-size: 30px;
-    height: fit-content;
-
-    border-radius: inherit;
-
-    margin: 0px;
-    padding: 0px;
+    font-size: 25px;
+    height: 100%;   
+    align-items: center;
 }
 
-
 nav .nav_list a {
-    background-color: inherit;
-    border-radius: 5px;
-    border: 1px #404040;
+    border-radius: 10px;
     text-decoration: none;
-    padding: 30px;
+    padding: 27px 25px;
 }
 
 nav .nav_list a:hover {
@@ -41,5 +24,6 @@ nav .nav_list a:hover {
 }
 
 nav .nav_list a:active {
+    background-color: #303030;
     color: rgb(90, 49, 164);
 }
