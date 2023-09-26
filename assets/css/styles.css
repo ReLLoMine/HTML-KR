@@ -1,27 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;700&display=swap');
+@import url('nav_menu.css');
 
-* {/* background-color: inherit; */font-family: Montserrat;color: white;background-color: #101010;box-sizing: border-box;}
-
-.source {
-
+* {/* background-color: inherit; */
+    font-family: Montserrat;
+    color: white;
+    background-color: #101010;
+    box-sizing: border-box;
 }
 
-img.logo {
+header img.logo {
     height: 50px;
     margin: 10px;
     background-color: inherit;
 }
 
-.main {
-width:100%;
-display: block;
-margin-block-start: 1em;
-margin-block-end: 1em;
-margin-inline-start: 5px;
-margin-inline-end: 5px;
+header .logo_div {
+    margin: 10px;
+    background-color: inherit;
+    border-radius: 10px;
 }
 
-
+header .logo_div:hover {
+    background-color: #202020;
+}
 
 header {
     display: flex;
@@ -30,70 +32,15 @@ header {
     justify-content: space-between;
 }
 
-nav {
-    
-    background-color: #151515;
-    padding: 0px;
-    border-radius: 10px;
-    max-width: 50%;
-    height: fit-content;
+.main {
+    width:100%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 5px;
+    margin-inline-end: 5px;
 }
 
-nav > * {
-    background-color: inherit;
-}
-
-nav ul {
-    background-color: inherit;
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-}
-
-.ulheader {
-    /*margin-left: 25px;*/
-    height: fit-content;
-    margin: 0px;
-    padding: 0;
-}
-
-.headerinfo {
-    margin: 10px;
-    background-color: #151515;
-    border-radius: 5px;
-}
-
-nav > ul li {
-    background-color: inherit;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px #404040;
-}
-
-nav > ul li a {
-    background-color: inherit;
-    color: white;
-    margin: 5px;
-    text-decoration: none;
-
-}
-
-nav ul li:hover {
-    background-color: #252525;
-}
-
-nav ul li a:hover {
-    color: #ff7c00;
-}
-
-nav ul li a:active {
-    color: #7520d6;
-}
-/*
-nav ul li a:visited {
-    color: #7520d6;
-}
-*/
 header, main {
     /*border: 1px solid black;*/
     margin: 10px;
@@ -114,8 +61,11 @@ aside {
 
 main {
     display: flex;
-    background-color: #e0e0e0; /* Цвет фона для примера */
-    padding: 20px; /* Отступы для вашего main */
+    background-color: #1a1a1a; /* Цвет фона для футера (замените на свой) */
+    font-size: 20px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
 }
 
 /*FOOTER*/
