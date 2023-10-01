@@ -1,0 +1,196 @@
+header /*расположение логотипа сайта*/{
+    text-align: center;
+    width: 100%; 
+    margin: 0 auto;
+}
+header h1 {
+    font-family: 'Roboto Slab', serif; /*замена шрифта*/
+    font-size: 100px; /*размер шрифта*/
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+h1 /*cтиль для заголовка*/{
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    margin: 20px 0;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav ul /*стиль для навигационного меню*/{ 
+    font-family: 'Roboto Slab', serif; /*замена шрифта*/
+    font-size: 25px; /*размер шрифта*/
+    list-style-type: none; /*стиль маркера*/
+    padding: 20px 40px 20px 40px; /*внутренние отступы*/
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+nav li {
+    display: inline; /*формат строчного отображения*/
+    margin: 0 60px; /*отступы между пунктами меню*/
+}
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    padding: 20px 20px;
+    transition: background-color 0.9s; /*плавная анимация при наведении*/
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+nav a:hover /*стили для состояний ссылок*/{
+    background-color: rgb(88, 85, 147);
+}
+nav a:active {
+    background-color: rgb(192, 192, 192);
+    transition: color 0.5s
+}
+nav a:visited {
+    color: rgb(255, 255, 255);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+body /*установка цвета фона для всей страницы*/{
+    background-color: rgb(192, 192, 192);
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+main {
+    font-size: 30px;
+    width: 80%; 
+    margin: 0 auto; /*горизонтальное центрирование*/
+}
+main h1 {
+    font-family: 'Roboto Slab', serif; /*замена шрифта*/
+    font-size: 90px; /*размер шрифта*/
+}
+main h2 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif; /*замена шрифта*/
+    font-size: 70px; /*размер шрифта*/
+}
+main h3 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif; /*замена шрифта*/
+    font-size: 40px; /*размер шрифта*/
+}
+main ol {
+    list-style-type: upper-roman; /*стиль маркера*/
+    padding: 25px 40px 40px 40px; /*внутренние отступы*/
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+aside /*расположение боковой панели*/{
+    float: right; /*выравнивание справа*/
+    width: 40%; /*ширина*/
+    margin-left: 10px; /*отступ слева*/
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer /*стили для футера*/{
+    font-size: 25px;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(192, 192, 192);
+    padding: 20px 20px 100px 20px;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*Для практической работы №3*/
+
+.relative-element {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    left: 10px;
+    background-color: rgb(255, 0, 0);
+  }
+
+  .parent-element {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    left: 6px;
+    top: 68px;
+    background-color: rgb(0, 255, 0);
+  }
+  .absolute-element {
+    display: inline-block;
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    top: 25%;
+    background-color: rgb(255, 0, 255);
+  }
+
+  .fixed-element {
+    display: inline-block;
+    position: fixed;
+    width: 150px;
+    height: 60px;
+    top: 32px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .sticky-element {
+    display: inline-block;
+    position: sticky;
+    width: 150px;
+    height: 50px;
+    right: 5px;
+    top: 37px; /*элемент будет липнуть при прокрутке на 20px сверху*/
+    background-color: rgb(88, 85, 147);
+  }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+  .navigation-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 0;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
+  .logo {
+    position: relative;
+    top: 131px;
+    left: 700px;
+  }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.menu-container /*cтилизация контейнера для меню*/{
+    width: 100%;
+    background-color: rgb(192, 192, 192);
+    color: rgb(255, 255, 255);
+    padding: 1px 0;
+    border-bottom: 10px solid rgb(88, 85, 147); /*горизонтальная граница снизу*/
+  }
+  .menu /*cтилизация самого меню*/{
+    display: flex; /*расположение элементов меню в строку*/
+    list-style: none;
+    margin: 0; /*внешние отступы*/
+    padding: 0; /*внутренние отступы*/
+  }
+  .menu-item  /*cтилизация пунктов меню*/{
+    margin-right: 150px; /*внешний отступ между пунктами меню*/
+  }
+  .menu-item a  /*cтилизация ссылок в пунктах меню*/{
+    text-decoration: none;
+    color: rgb(255, 255, 255); /*цвет текста ссылок*/
+    font-weight: bold;
+  }
+  .menu-item a:hover /*cтилизация при наведении на ссылки*/{
+    text-decoration: underline;
+  }

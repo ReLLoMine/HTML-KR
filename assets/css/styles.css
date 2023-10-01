@@ -3,6 +3,7 @@
 @import url('nav_menu.css');
 @import url('footer.css');
 @import url('header.css');
+@import url('form.css');
 
 * {
     font-family: Montserrat;

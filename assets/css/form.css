@@ -1,0 +1,100 @@
+form {
+    display: block;
+    background-color: #151515;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="file"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="submit"],
+input[type="datetime-local"],
+select[id="language-select"] /*cтилизация полей ввода*/{
+  border: 3px solid rgb(42, 42, 42);
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus,
+input[type="datetime-local"]:focus,
+select[id="language-select"]:focus /*cтилизация полей ввода при фокусе*/{
+  outline: none;
+  border: 3px solid #303030; 
+  box-shadow: 0 0 5px rgba(42, 42, 42, 1.2);
+}
+
+input[type="submit"],
+button /*cтилизация кнопок*/{
+  background-color: rgb(42, 42, 42);
+  color: rgb(222, 222, 222);
+  border: 3px solid #252525;
+  border-radius: 5px; 
+  padding: 10px 10px;
+  font-size: 14px; 
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+button:hover /*cтилизация кнопок при наведении*/{
+  background-color: rgb(100, 100, 100);
+}
+
+textarea /*стилизация текстовой области*/{
+  background-color: rgb(222, 222, 222);
+  border: 3px solid rgb(42, 42, 42);
+  border-radius: 5px;
+  width: 375px;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+textarea:focus /*стилизация текстовой области при фокусе*/{
+  outline: none;
+  border: 3px solid #252525;
+}
+  
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+input[type="password"]::placeholder,
+input[type="file"]::placeholder,
+input[type="datetime-local"]::placeholder,
+textarea::placeholder /*стилизация подсказок с использованием псевдоэлемента*/{
+  color: rgb(42, 42, 42);
+  font-style: italic;
+}
+#text-input::placeholder /*пример с измененным цветом для определенного поля*/{
+  color: rgb(255, 0, 0);
+}
+
+.field {
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+form fieldset {
+    border-color: transparent;
+}
+
+form label {
+    background-color: transparent;
+}
+
+form input, form textarea, form select {
+    background-color: #202020;
+}
