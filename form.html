@@ -28,79 +28,88 @@
 
     <main>
         <section>
+            
             <article>
                 <h2> Регистрация </h2>
             </article>
-            <form action="#" method="post">
-                <div class="field">
-                    <label for="text-input">Текст:</label>
-                    <input type="text" id="text-input" name="text" placeholder="Введите текст" required><br>
-                </div>
-                
-                <div class="field">
-                    <label for="tel-input">Телефон:</label>
-                    <input type="tel" id="tel-input" name="tel" placeholder="Введите номер телефона"><br>    
-                </div>
-                
-                <div class="field">
-                    <label for="email-input">Почта:</label>
-                    <input type="email" id="email-input" name="email" placeholder="Введите e-mail"><br>
-                </div>
 
-                <div class="field">
-                    <label for="password-input">Пароль:</label>
-                    <input type="password" id="password-input" name="password" minlength="10" placeholder="Введите пароль" required><br>
-                </div>
-
-                <div class="field">
-                    <label for="file-input">Файл:</label>
-                    <input type="file" id="file-input" name="file"><br>
-                </div>
-
-                <div class="field">
-                    <label for="checkbox-input">Флажок:</label>
-                    <input type="checkbox" id="checkbox-input" name="checkbox" checked><br>
-                </div>
-        
-                <div class="field">
-                    <label>Радио:</label>
-                    <input type="radio" id="radio-input1" name="radio" value="option1" checked>
-                    <label for="radio-input1">ON</label>
-                    <input type="radio" id="radio-input2" name="radio" value="option2">
-                    <label for="radio-input2">OFF</label><br>
-                </div>
-
-                <div class="field">
-                    <label for="submit-input">Отправить данные:</label>
-                    <input type="submit" id="submit-input" value="Отправить"><br>
-                </div>
-
-                <div class="field">
-                    <label for="datetime-input">Дата и время:</label>
-                    <input type="datetime-local" id="datetime-input" name="datetime" min="2023-01-01T00:00" max="2023-12-31T23:59"><br>
-                </div>
-
-                <div class="field">
-                    <label for="textarea">Текстовая область:</label>
-                    <textarea id="textarea" name="textarea" cols="30" rows="5" maxlength="200" minlength="10" placeholder="Введите текст" required></textarea><br>
-                </div>
-
-                <div class="field">
-                    <fieldset>
-                        <legend>Выберите язык:</legend>
-                        <select id="language-select" name="language-select" required size="2" multiple>
-                            <option value="english">Английский</option>
-                            <option value="russian">Русский</option>
-                            <option value="french">Французский</option>
-                            <option value="german">Немецкий</option>
-                        </select>
-                    </fieldset>
-                </div>
-
-                <button type="submit">Отправить форму</button>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2239.089015552453!2d37.42004697739722!3d55.86112197312453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5478878365a53%3A0x12373c1bc932aebc!2z0K3QudGE0LXQu9C10LLQsCDQsdCw0YjQvdGP!5e0!3m2!1sru!2sru!4v1695936375841!5m2!1sru!2sru" width="395" height="250" style="border: 5px;;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <iframe width="395" height="250" src="https://www.youtube.com/embed/GoataVX94Ew?si=ntbpMJA3wQINl8-t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            </form>
+            <article class="last" id="form">
+                <form action="#" method="post">
+                    <div class="field">
+                        <label for="text-input">Текст:</label>
+                        <input type="text" id="text-input" name="text" placeholder="Введите текст" required>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="tel-input">Телефон:</label>
+                        <input type="tel" id="tel-input" name="tel" placeholder="Введите номер телефона">
+                    </div>
+                    
+                    <div class="field">
+                        <label for="email-input">Почта:</label>
+                        <input type="email" id="email-input" name="email" placeholder="Введите e-mail">
+                    </div>
+    
+                    <div class="field">
+                        <label for="password-input">Пароль:</label>
+                        <input type="password" id="password-input" name="password" minlength="10" placeholder="Введите пароль" required>
+                    </div>
+    
+                    <div class="field">
+                        <label for="file-input">Файл:</label>
+                        <input type="file" id="file-input" name="file">
+                    </div>
+    
+                    <div class="field">
+                        <label for="checkbox-input">Флажок:</label>
+                        <div id="checkbox">
+                            <input type="checkbox" id="checkbox-input1" name="checkbox" checked>
+                            <input type="checkbox" id="checkbox-input2" name="checkbox" checked>
+                            <input type="checkbox" id="checkbox-input3" name="checkbox" checked>
+                        </div>
+                    </div>
+            
+                    <div class="field" >
+                        <label>Да?</label>
+                        <div id="checkbox">
+                            <input type="radio" id="radio-input1" name="radio" value="option1" checked>
+                            <label for="radio-input1">ДА</label>
+                            <input type="radio" id="radio-input2" name="radio" value="option2">
+                            <label for="radio-input2">НЕТ</label>
+                        </div>
+                    </div>
+    
+                    <div class="field">
+                        <label for="submit-input">Отправить данные:</label>
+                        <input type="submit" id="submit-input" value="Отправить">
+                    </div>
+    
+                    <div class="field">
+                        <label for="datetime-input">Дата и время:</label>
+                        <input type="datetime-local" id="datetime-input" name="datetime" min="2023-01-01T00:00" max="2023-12-31T23:59">
+                    </div>
+    
+                    <div class="field">
+                        <label for="textarea">Текстовая область:</label>
+                        <textarea id="textarea" name="textarea" cols="30" rows="5" maxlength="200" minlength="10" placeholder="Введите текст" required></textarea>
+                    </div>
+    
+                    <div class="field">
+                        <fieldset id="language">
+                            <legend>Выберите язык:</legend>
+                            <select id="language-select" name="language-select" required size="2" multiple>
+                                <option value="english">Английский</option>
+                                <option value="russian">Русский</option>
+                                <option value="french">Французский</option>
+                                <option value="german">Немецкий</option>
+                            </select>
+                        </fieldset>
+                    </div>
+                    <div class="field">
+                        <button type="submit">Отправить форму</button>
+                    </div>
+                </form>
+            </article>
         </section>
 
         <!-- ASIDE -->

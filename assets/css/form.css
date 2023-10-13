@@ -6,21 +6,20 @@ form {
     margin-bottom: 10px;
 }
 
-
 input[type="text"],
 input[type="tel"],
 input[type="email"],
 input[type="password"],
 input[type="file"],
 input[type="checkbox"],
-input[type="radio"],
+input[type="yes"],
 input[type="submit"],
 input[type="datetime-local"],
 select[id="language-select"] /*cтилизация полей ввода*/{
   border: 3px solid rgb(42, 42, 42);
+  background: #151515;
   border-radius: 5px;
   padding: 5px;
-  margin-bottom: 15px;
   font-size: 12px;
 }
 
@@ -38,8 +37,8 @@ select[id="language-select"]:focus /*cтилизация полей ввода �
 
 input[type="submit"],
 button /*cтилизация кнопок*/{
-  background-color: rgb(42, 42, 42);
-  color: rgb(222, 222, 222);
+  transition: background .15s;
+  background-color: #151515;
   border: 3px solid #252525;
   border-radius: 5px; 
   padding: 10px 10px;
@@ -47,9 +46,18 @@ button /*cтилизация кнопок*/{
   cursor: pointer;
 }
 
+button[type="submit"]:hover,
 input[type="submit"]:hover,
 button:hover /*cтилизация кнопок при наведении*/{
-  background-color: rgb(100, 100, 100);
+  color: #ff7c00;
+  background-color: #252525;
+}
+
+button[type="submit"]:active,
+input[type="submit"]:active,
+button:hover /*cтилизация кнопок при наведении*/{
+  color: rgb(90, 49, 164);
+  background-color: #303030;
 }
 
 textarea /*стилизация текстовой области*/{
@@ -74,27 +82,92 @@ input[type="password"]::placeholder,
 input[type="file"]::placeholder,
 input[type="datetime-local"]::placeholder,
 textarea::placeholder /*стилизация подсказок с использованием псевдоэлемента*/{
-  color: rgb(42, 42, 42);
+  text-align: center;
+  color: rgb(55, 55, 55);
   font-style: italic;
 }
 #text-input::placeholder /*пример с измененным цветом для определенного поля*/{
+  text-align: center;
   color: rgb(255, 0, 0);
 }
 
+input[type="file"]::file-selector-button {
+  font-family: Montserrat;
+  font-size: 15px;
+  margin-right: 20px;
+  background: #151515;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .15s;
+}
+
+input[type="file"]::file-selector-button:hover {
+  color: #ff7c00;
+  background: #252525;
+}
+
+input[type="file"]::file-selector-button:active {
+  color: rgb(90, 49, 164);
+  background: #303030;  
+}
+
+select > option:checked  {
+  background: #303030;
+}
+
 .field {
-    margin: 15px;
-    margin-left: auto;
-    margin-right: auto; 
+  margin: 15px;
+  margin-left: auto;
+  margin-right: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.field > label,
+.field legend {
+  background-color: transparent;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.field > input,
+.field > textarea,
+.field > fieldset,
+.field > button {
+  width: 60%;
 }
 
 form fieldset {
     border-color: transparent;
 }
 
-form label {
-    background-color: transparent;
+form input, form textarea, form select {
+    background-color: #151515;
 }
 
-form input, form textarea, form select {
-    background-color: #202020;
+#checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+#checkbox > * {
+  margin: 5px;
+}
+
+#language {
+  display: flex;
+  flex-direction: column;
+}
+
+#language > select {
+  height: 100px;
+}
+
+#form {
+  
 }
