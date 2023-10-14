@@ -35,8 +35,8 @@
     right: 50px;
 }
 
-.button, .logo_div {
-    transition: background-color 0.15s, color 0.15s;
+.button, .logo_div, .menu-button-container {
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
 .contacts {
@@ -118,10 +118,20 @@ aside {
     margin: 10px;
     margin-left: 0px;
     border-radius: 10px;
-    max-width: 25%;
+    width: 25%;
+}
+
+@media (max-width: 1150px) {
+    aside {
+        visibility: hidden;
+        width: 0px;
+        padding: 0px;
+        margin: 0px;
+    }
 }
 
 aside .contacts {
+    visibility: inherit;
     text-align: center;
     background-color: inherit;
 }

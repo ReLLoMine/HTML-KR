@@ -5,25 +5,155 @@ nav {
     max-width: 60%;
 }
 
-nav .nav_list {
+.nav_list {
     display: flex;
     font-size: 25px;
     height: 100%;   
     align-items: center;
 }
 
-nav .nav_list a {
+.nav_list > a {
     border-radius: 10px;
     text-decoration: none;
     padding: 17px 15px;
 }
 
-nav .nav_list a:hover {
+.nav_list > a:hover {
     background-color: #252525;
     color: #ff7c00;
 }
 
-nav .nav_list a:active {
+.nav_list > a:active {
     background-color: #303030;
     color: rgb(90, 49, 164);
+}
+
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+  
+.nav_list > a {
+    overflow: hidden;
+}
+  
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 60px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.menu-button-container:hover {
+    background-color: #252525;
+}
+
+.menu-button-container:active {
+    background-color: #303030;
+}
+
+.menu-button-container:hover > .menu-button,
+.menu-button-container:hover > .menu-button::before,
+.menu-button-container:hover > .menu-button::after
+{
+    transition: background-color 0.15s ease-in-out, transform 0.2s ease-in-out;
+    background-color: #ff7c00;
+}
+
+.menu-button-container:active > .menu-button,
+.menu-button-container:active > .menu-button::before,
+.menu-button-container:active > .menu-button::after
+{
+    transition: background-color 0.15s ease-in-out, transform 0.2s ease-in-out;
+    background-color: rgb(90, 49, 164);
+}
+  
+#menu-toggle {
+    display: none;
+}
+  
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: background-color 0.15s ease-in-out, transform 0.2s ease-in-out;
+    border-radius: 2px;
+}
+  
+.menu-button::before {
+    content: '';
+    margin-top: -8px;
+}
+  
+.menu-button::after {
+    content: '';
+    margin-top: 8px;
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: transparent;
+}
+  
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+  
+@media (max-width: 1000px) {
+    .menu-button-container {
+        display: flex;
+    }
+    .nav_list {
+        background-color: #151515;
+        height: auto;
+        position: absolute; 
+        top: 0px;
+        right: 70px;
+        flex-direction: column;
+        width: 30%;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        border: #1a1a1a solid 10px;
+    }
+    #menu-toggle ~ .nav_list > a {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        transition: height 0.2s ease-in-out, padding 0.2s ease-in-out, background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    }
+    #menu-toggle:checked ~ .nav_list > a {
+        height: 64px;
+        padding: 17px;
+        transition: height 0.2s ease-in-out, padding 0.2s ease-in-out, background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    }
+    .nav_list > a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #151515;
+    }
 }
