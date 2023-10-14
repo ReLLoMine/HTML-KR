@@ -1,0 +1,55 @@
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image-container {
+    position: relative;
+    margin: 5px;
+    width: 48.5%;
+    height: 100%;
+}
+
+@media (max-width: 1150px)
+{
+    .image-container {
+        width: 100%;
+    }
+}
+
+.image-container img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    overflow: hidden;
+    border-radius: inherit;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    transition: color 0.15s ease-in-out, background 0.15s ease-in-out;
+}
+
+.cover > a {
+    margin: 20px;
+    text-decoration: none;
+    transition: color 0.05s ease-in-out;
+    color: inherit;
+}
+
+.cover > a:hover {
+    color: #ff7c00;
+}
+
+.cover:hover {
+    color: white;
+    background: linear-gradient(transparent 60%, rgba(16, 16, 16, 0.8));
+}   

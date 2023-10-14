@@ -4,12 +4,14 @@
 @import url('footer.css');
 @import url('header.css');
 @import url('form.css');
+@import url('gallery.css');
 
 * {
     font-family: Montserrat;
     color: white;
     box-sizing: border-box;
 }
+
 
 #media {
     display: flex;
