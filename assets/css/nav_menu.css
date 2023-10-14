@@ -2,7 +2,6 @@ nav {
     background-color: #151515;
     padding: 0px;
     border-radius: 10px;
-    max-width: 60%;
 }
 
 .nav_list {
@@ -133,7 +132,6 @@ nav {
         top: 0px;
         right: 70px;
         flex-direction: column;
-        width: 30%;
         justify-content: center;
         align-items: center;
         border-radius: 20px;
