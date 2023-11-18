@@ -1,3 +1,5 @@
+@import url('colors.css');
+
 nav {
     background-color: #151515;
     padding: 0px;
@@ -14,7 +16,9 @@ nav {
 .nav_list > a {
     border-radius: 10px;
     text-decoration: none;
-    padding: 17px 15px;
+    padding: 0px 12px;
+    height: 100%;
+    line-height: 64px;
 }
 
 .nav_list > a:hover {
@@ -39,11 +43,6 @@ nav {
 
 #menu-toggle {
     display: none;
-}
-
-  
-.nav_list > a {
-    overflow: hidden;
 }
   
 .menu-button-container {
@@ -136,6 +135,7 @@ nav {
         align-items: center;
         border-radius: 20px;
         border: #1a1a1a solid 10px;
+        overflow: hidden;
     }
     #menu-toggle ~ .nav_list > a {
         height: 0;
@@ -145,7 +145,6 @@ nav {
     }
     #menu-toggle:checked ~ .nav_list > a {
         height: 64px;
-        padding: 17px;
         transition: height 0.2s ease-in-out, padding 0.2s ease-in-out, background-color 0.15s ease-in-out, color 0.15s ease-in-out;
     }
     .nav_list > a {

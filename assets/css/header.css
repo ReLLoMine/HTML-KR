@@ -1,9 +1,11 @@
+@import url('colors.css');
+
 header {
     margin: 10px;
     padding: 10px;
     display: flex;
     border-radius: 10px;
-    background-color: #1a1a1a;
+    background-color: var(--gray-1a);
     justify-content: space-between;
     position: sticky;
     top: 0;
@@ -26,9 +28,9 @@ header .logo_div a img.logo {
 }
 
 header .logo_div:hover {
-    background-color: #202020;
+    background-color: var(--gray-20);
 }
 
 header .logo_div:active {
-    background-color: #303030;
+    background-color: var(--gray-30);
 }

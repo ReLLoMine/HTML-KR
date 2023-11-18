@@ -5,6 +5,7 @@
 @import url('header.css');
 @import url('form.css');
 @import url('gallery.css');
+@import url('colors.css');
 
 * {
     font-family: Montserrat;
@@ -51,15 +52,15 @@
 }
 
 .contacts a:hover {
-    color: #ff7c00;
+    color: var(--orange);
 }
 
 .contacts a:active {
-    color: rgb(90, 49, 164);
+    color: var(--violet);
 }
 
 body {
-    background-color: #101010;
+    background-color: var(--gray-10);
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 5px;
@@ -71,7 +72,7 @@ body {
 
 main {
     display:flex;
-    background-color: #1a1a1a; /* Цвет фона для футера (замените на свой) */
+    background-color: var(--gray-1a); /* Цвет фона для футера (замените на свой) */
     font-size: 20px;
     padding: 0px;
     margin: 10px;
@@ -88,7 +89,7 @@ section .last {
 }
 
 article {
-    background-color: #151515;
+    background-color: var(--gray-15);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -114,7 +115,7 @@ article pre {
 }
 
 aside {
-    background-color: #151515;
+    background-color: var(--gray-15);
     font-size: 20px;
     padding: 15px;
     margin: 10px;

@@ -1,6 +1,8 @@
+@import url('colors.css');
+
 form {
     display: block;
-    background-color: #151515;
+    background-color: var(--gray-15);
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
@@ -17,7 +19,7 @@ input[type="submit"],
 input[type="datetime-local"],
 select[id="language-select"] /*cтилизация полей ввода*/{
   border: 3px solid rgb(42, 42, 42);
-  background: #151515;
+  background: var(--gray-15);
   border-radius: 5px;
   padding: 5px;
   font-size: 12px;
@@ -31,15 +33,15 @@ input[type="file"]:focus,
 input[type="datetime-local"]:focus,
 select[id="language-select"]:focus /*cтилизация полей ввода при фокусе*/{
   outline: none;
-  border: 3px solid #303030; 
+  border: 3px solid var(--gray-30); 
   box-shadow: 0 0 5px rgba(42, 42, 42, 1.2);
 }
 
 input[type="submit"],
 button /*cтилизация кнопок*/{
   transition: background .15s;
-  background-color: #151515;
-  border: 3px solid #252525;
+  background-color: var(--gray-15);
+  border: 3px solid var(--gray-25);
   border-radius: 5px; 
   padding: 10px 10px;
   font-size: 14px; 
@@ -49,15 +51,15 @@ button /*cтилизация кнопок*/{
 button[type="submit"]:hover,
 input[type="submit"]:hover,
 button:hover /*cтилизация кнопок при наведении*/{
-  color: #ff7c00;
-  background-color: #252525;
+  color: var(--orange);
+  background-color: var(--gray-25);
 }
 
 button[type="submit"]:active,
 input[type="submit"]:active,
 button:hover /*cтилизация кнопок при наведении*/{
-  color: rgb(90, 49, 164);
-  background-color: #303030;
+  color: var(--violet);
+  background-color: var(--gray-30);
 }
 
 textarea /*стилизация текстовой области*/{
@@ -72,7 +74,7 @@ textarea /*стилизация текстовой области*/{
 
 textarea:focus /*стилизация текстовой области при фокусе*/{
   outline: none;
-  border: 3px solid #252525;
+  border: 3px solid var(--gray-25);
 }
   
 input[type="text"]::placeholder,
@@ -88,30 +90,30 @@ textarea::placeholder /*стилизация подсказок с исполь�
 }
 #text-input::placeholder /*пример с измененным цветом для определенного поля*/{
   text-align: center;
-  color: rgb(255, 0, 0);
+  color: red;
 }
 
 input[type="file"]::file-selector-button {
   font-family: Montserrat;
   font-size: 15px;
   margin-right: 20px;
-  background: #151515;
+  background: var(--gray-15);
   border: none;
   padding: 7px 14px;
   border-radius: 5px;
-  color: #fff;
+  color: white;
   cursor: pointer;
   transition: background .15s;
 }
 
 input[type="file"]::file-selector-button:hover {
-  color: #ff7c00;
-  background: #252525;
+  color: var(--orange);
+  background: var(--gray-25);
 }
 
 input[type="file"]::file-selector-button:active {
-  color: rgb(90, 49, 164);
-  background: #303030;  
+  color: var(--violet);
+  background: var(--gray-30);  
 }
 
 select > option:checked  {
@@ -147,7 +149,7 @@ form fieldset {
 }
 
 form input, form textarea, form select {
-    background-color: #151515;
+    background-color: var(--gray-15);
 }
 
 #checkbox {
